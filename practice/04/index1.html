@@ -11,6 +11,7 @@
       <p>
         <router-link to="/main">Main 컴포넌트로 이동</router-link>
         <router-link to="/login">Login 컴포넌트로 이동</router-link>
+        <router-link to="/practice">practice</router-link>
       </p>
       <router-view></router-view>
     </div>
@@ -21,11 +22,12 @@
       // 3. Main. Login 컴포넌트 내용 정의
       var Main = { template: '<button type="button" name="button">main</button>' };
       var Login = { template: '<div>login</div>' };
-
+      var practice = {template: '<div>login</div>'}
       // 4. 각 url에 해당하는 컴포넌트 등록
       var routes = [
         { path: '/main', component: Main },
-        { path: '/login', component: Login }
+        { path: '/login', component: Login },
+        { path: '/practice', component: practice }
       ];
 
       // 5. 뷰 라우터 정의
